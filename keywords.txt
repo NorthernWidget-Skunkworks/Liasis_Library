@@ -1,0 +1,16 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Liasis	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+getHeader	KEYWORD2
+getString	KEYWORD2
+getThermo	KEYWORD2
+getThermoC	KEYWORD2
+getTemp	KEYWORD2
