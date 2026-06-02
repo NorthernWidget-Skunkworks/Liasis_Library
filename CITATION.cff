@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Liasis_Library"
+version: 1.0.0
+date-released: 2026-06-01
+url: "https://github.com/NorthernWidget-Skunkworks/Liasis_Library"
+repository-code: "https://github.com/NorthernWidget-Skunkworks/Liasis_Library"
+license: GPL-3.0-only
+authors:
+- family-names: "Schulz"
+  given-names: "Bobby"
+  orcid: "https://orcid.org/0000-0002-9272-4756"
+  affiliation: "Northern Widget LLC"
+- family-names: "Wickert"
+  given-names: "Andrew D."
+  orcid: "https://orcid.org/0000-0002-9545-3365"
+  affiliation: "University of Minnesota, Department of Earth & Environmental Sciences"

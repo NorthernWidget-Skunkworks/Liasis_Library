@@ -1,0 +1,28 @@
+{
+  "title": "Liasis_Library",
+  "description": "Arduino library for the NorthernWidget Liasis longwave pyrgeometer. Measures atmospheric downwelling thermal infrared radiation via a ZTP-135SR thermopile, sensitive to ~5–30 µm.",
+  "upload_type": "software",
+  "license": {"id": "GPL-3.0-only"},
+  "creators": [
+    {
+      "name": "Schulz, Bobby",
+      "orcid": "0000-0002-9272-4756",
+      "affiliation": "Northern Widget LLC"
+    },
+    {
+      "name": "Wickert, Andrew D.",
+      "orcid": "0000-0002-9545-3365",
+      "affiliation": "University of Minnesota, Department of Earth & Environmental Sciences"
+    }
+  ],
+  "keywords": [
+    "pyrgeometer",
+    "longwave radiation",
+    "thermal infrared",
+    "atmospheric radiation",
+    "Arduino",
+    "open source",
+    "environmental sensing",
+    "ZTP-135SR"
+  ]
+}
