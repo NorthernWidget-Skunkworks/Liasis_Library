@@ -2,7 +2,7 @@ name: Deploy Doxygen docs to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   docs:
