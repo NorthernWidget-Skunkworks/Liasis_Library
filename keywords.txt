@@ -1,4 +1,8 @@
 #######################################
+# Syntax Coloring Map for Liasis_Library
+#######################################
+
+#######################################
 # Datatypes (KEYWORD1)
 #######################################
 
@@ -14,3 +18,9 @@ getString	KEYWORD2
 getThermo	KEYWORD2
 getThermoC	KEYWORD2
 getTemp	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+ADC_ADR	LITERAL1
