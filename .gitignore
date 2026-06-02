@@ -1,0 +1,6 @@
+html/
+xml/
+_site/
+_built/
+doxybook2/
+doxybook2-linux-amd64-*.zip
