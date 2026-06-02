@@ -12,7 +12,7 @@ via a ZTP-135SR thermopile, sensitive to ~5-30 µm.
 as interesting as possible."
 -Freeman Dyson
 
-Distributed as-is; no warranty is given.
+License: GNU GPL v3. You should find a copy in the repository.
 ******************************************************************************/
 
 #ifndef Liasis_h
