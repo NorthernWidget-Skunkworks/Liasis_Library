@@ -32,8 +32,11 @@ The longwave module reads the ZTP-135SR thermopile and its integrated thermistor
 Liasis pyrgeo;
 
 void setup() {
-    Serial.begin(38400);
-    pyrgeo.begin();
+    Serial.begin(9600);
+    if (!pyrgeo.begin()) {
+        Serial.println("Liasis not found. Check wiring.");
+        while (1);
+    }
     Serial.println(pyrgeo.getHeader());
 }
 
@@ -47,7 +50,7 @@ void loop() {
 
 | Method | Returns | Description |
 |--------|---------|-------------|
-| `begin()` | `uint8_t` | Initialize sensor and I2C bus |
+| `begin()` | `bool` | Initialize sensor and I2C bus; returns false if ADS1115 not found |
 | `getHeader()` | `String` | Comma-separated column names with units |
 | `getString()` | `String` | Comma-separated measurement values |
 | `getThermo()` | `float` | Thermopile raw output voltage (mV) |
