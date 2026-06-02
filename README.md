@@ -64,4 +64,4 @@ The hardware project lives at [NorthernWidget-Skunkworks/Project-Monarch](https:
 
 ## License
 
-Distributed as-is; no warranty is given.
+[GNU General Public License v3](LICENSE)
