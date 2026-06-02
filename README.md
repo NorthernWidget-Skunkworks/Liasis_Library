@@ -1,5 +1,7 @@
 # Liasis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20501559.svg)](https://doi.org/10.5281/zenodo.20501559)
+
 **Arduino library for the NorthernWidget longwave pyrgeometer**
 
 *Liasis* is a genus of Australian water and olive pythons. Like all pythons, they possess labial pit organs — heat-sensing cavities along the lips that detect thermal infrared radiation in the ~5–30 µm range, the same window in which warm objects near ambient temperature emit most strongly. It is the same physical phenomenon this library measures.
