@@ -24,10 +24,13 @@ Liasis::Liasis()
 
 }
 
-uint8_t Liasis::begin()
+bool Liasis::begin()
 {
 	Wire.begin();
-  WriteWord_LE(ADC_ADR, ADC_CONF, ADC_CONF_MASK);
+	Wire.beginTransmission(ADC_ADR);
+	if (Wire.endTransmission() != 0) return false;
+	WriteWord_LE(ADC_ADR, ADC_CONF, ADC_CONF_MASK);
+	return true;
 }
 
 float Liasis::getThermo()

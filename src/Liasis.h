@@ -35,7 +35,7 @@ class Liasis
 {
 	public:
 		Liasis();
-		uint8_t begin();
+		bool begin();
 		float getThermo();
 		float getThermoC(uint8_t Accuracy = 0);
 		float getTemp();
