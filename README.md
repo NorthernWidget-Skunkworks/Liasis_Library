@@ -70,3 +70,5 @@ The hardware project lives at [NorthernWidget-Skunkworks/Project-Monarch](https:
 ## License
 
 [GNU General Public License v3](LICENSE)
+
+**Full API reference:** https://docs.northernwidget.com/Liasis_Library/
