@@ -1,0 +1,437 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.1 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Liasis Library</title>
+<meta name="description" content="Arduino library for the NorthernWidget Liasis longwave pyrgeometer">
+
+
+  <meta name="author" content="Northern Widget">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Liasis Library">
+<meta property="og:title" content="Liasis Library">
+<meta property="og:url" content="https://docs.northernwidget.com/Liasis_Library/">
+
+
+  <meta property="og:description" content="Arduino library for the NorthernWidget Liasis longwave pyrgeometer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://docs.northernwidget.com/Liasis_Library/">
+
+
+
+
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+    "name": null,
+    "url": "https://docs.northernwidget.com/Liasis_Library/"
+}
+</script>
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/Liasis_Library/feed.xml" type="application/atom+xml" rel="alternate" title="Liasis Library Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/Liasis_Library/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/Liasis_Library/">
+          Liasis Library
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/"
+                
+                
+              >Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <a href="/Liasis_Library/"><span class="nav__sub-title">Overview</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/Liasis_Library/Classes/classLiasis/"><span class="nav__sub-title">Liasis Class</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/Liasis_Library/Classes/index_classes/"><span class="nav__sub-title">Classes</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/Liasis_Library/Files/index_files/"><span class="nav__sub-title">Files</span></a>
+          
+
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h1 id="liasis">Liasis</h1>
+
+<p><a href="https://doi.org/10.5281/zenodo.20501559"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20501559.svg" alt="DOI" /></a></p>
+
+<p><strong>Arduino library for the NorthernWidget longwave pyrgeometer</strong></p>
+
+<p><em>Liasis</em> is a genus of Australian water and olive pythons. Like all pythons, they possess labial pit organs — heat-sensing cavities along the lips that detect thermal infrared radiation in the ~5–30 µm range, the same window in which warm objects near ambient temperature emit most strongly. It is the same physical phenomenon this library measures.</p>
+
+<p>This library interfaces with the NorthernWidget longwave pyrgeometer module, which measures atmospheric downwelling thermal infrared radiation via a ZTP-135SR thermopile, along with housing temperature for reference compensation.</p>
+
+<p>The shortwave (solar) sensor that was formerly bundled with this library’s predecessor is maintained separately as <strong><a href="https://github.com/NorthernWidget-Skunkworks/Libelle_Library">Libelle</a></strong> — named after the German word for dragonfly, whose compound eyes span UV to near-infrared.</p>
+
+<h2 id="channels">Channels</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Column (<code class="language-plaintext highlighter-rouge">getHeader()</code>)</th>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IR_Long [mV]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">getThermo()</code></td>
+      <td>Thermopile raw output voltage (mV)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IR_Long [C]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">getThermoC()</code></td>
+      <td>Longwave-derived temperature (°C)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PyrgT [C]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">getTemp()</code></td>
+      <td>Housing temperature from thermistor (°C)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The thermopile measures the net radiation exchange between the sensor and the sky above, which is dominated by atmospheric thermal emission in the 8–14 µm window. Housing temperature is required for reference junction compensation to obtain calibrated irradiance.</p>
+
+<h2 id="hardware">Hardware</h2>
+
+<p>The longwave module reads the ZTP-135SR thermopile and its integrated thermistor through a Texas Instruments ADS1115 16-bit ADC at I2C address 0x4A. Signal conditioning is handled by a pair of LTC2054 zero-drift op-amps.</p>
+
+<p><strong>Key ICs:</strong> Amphenol ZTP-135SR (thermopile + thermistor), ADS1115 (ADC), LTC2054 (op-amp)</p>
+
+<h2 id="basic-usage">Basic usage</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;Liasis.h&gt;</span><span class="cp">
+</span>
+<span class="n">Liasis</span> <span class="n">pyrgeo</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pyrgeo</span><span class="p">.</span><span class="n">begin</span><span class="p">())</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Liasis not found. Check wiring."</span><span class="p">);</span>
+        <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">pyrgeo</span><span class="p">.</span><span class="n">getHeader</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">pyrgeo</span><span class="p">.</span><span class="n">getString</span><span class="p">());</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="api">API</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Returns</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">begin()</code></td>
+      <td><code class="language-plaintext highlighter-rouge">bool</code></td>
+      <td>Initialize sensor and I2C bus; returns false if ADS1115 not found</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">getHeader()</code></td>
+      <td><code class="language-plaintext highlighter-rouge">String</code></td>
+      <td>Comma-separated column names with units</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">getString()</code></td>
+      <td><code class="language-plaintext highlighter-rouge">String</code></td>
+      <td>Comma-separated measurement values</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">getThermo()</code></td>
+      <td><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td>Thermopile raw output voltage (mV)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">getThermoC(accuracy)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td>Longwave-derived temperature (°C); accuracy 0 = low (default), 1 = high</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">getTemp()</code></td>
+      <td><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td>Housing temperature from thermistor (°C)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="name-history">Name history</h2>
+
+<p>This library was split from the combined <strong>Monarch</strong> library (formerly <strong>Dyson</strong>), which housed both the shortwave and longwave sensors in a single codebase. On the split, the longwave sensor became <em>Liasis</em> and the shortwave sensor became <em><a href="https://github.com/NorthernWidget-Skunkworks/Libelle_Library">Libelle</a></em>. The combined archive is preserved at <a href="https://github.com/NorthernWidget-Skunkworks/Monarch-Dyson_Library__Archive">NorthernWidget-Skunkworks/Monarch-Dyson_Library__Archive</a>.</p>
+
+<p><em>Liasis</em> continues the NorthernWidget tradition of naming instruments after organisms with exceptional sensory capabilities.</p>
+
+<p>The hardware project lives at <a href="https://github.com/NorthernWidget-Skunkworks/Project-Monarch">NorthernWidget-Skunkworks/Project-Monarch</a>.</p>
+
+<h2 id="license">License</h2>
+
+<p><a href="LICENSE">GNU General Public License v3</a></p>
+
+<p><strong>Full API reference:</strong> https://docs.northernwidget.com/Liasis_Library/</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+
+
+        
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/Liasis_Library/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://docs.northernwidget.com">Liasis Library</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/Liasis_Library/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
